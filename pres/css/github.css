@@ -1,0 +1,8 @@
+@font-face { font-family: "fontawesome"; src: url("../fonts/fa-brands-400.woff") format("woff"); }
+.github {
+}
+.github:before {
+    color: rgb(17, 17, 17);
+    font-family: 'fontawesome';
+    content: '  \f09b  ';
+}

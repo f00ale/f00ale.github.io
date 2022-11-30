@@ -1,0 +1,93 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../../fonts/Droid_Serif.css);
+@import url(../../../fonts/Ubuntu_Mono.css);
+@import url(../../../fonts/Yanone_Kaffeesatz.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 40px;
+$mainFont: 'Droid Serif', Helvetica, sans-serif;
+$headingFont: 'Yanone Kaffeesatz', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: normal;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 1.8em;
+$heading2Size: 1.2em;
+$heading3Size: 0.9em;
+$heading4Size: 0.6em;
+
+$codeFont: 'Ubuntu Mono';
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides .center {
+  text-align: center;
+}
+
+.reveal blockquote:first-child:before {
+  content: '"';
+  color: #81bedb;
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: .3;
+  position: absolute;
+  top: -.5em;
+  left: -.3em;
+  text-shadow: none;
+  z-index: -300;
+}
+.reveal blockquote:first-child:after {
+  content: '"';
+  color: #81bedb;
+  font-size: 7.5em;
+  font-weight: 700;
+  opacity: .3;
+  position: absolute;
+  bottom: -.5em;
+  right: -.3em;
+  text-shadow: none;
+  z-index: -300;
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal pre code {
+  font-size: 1.5em;
+  line-height: 1em;
+  padding: 15px;
+
+}

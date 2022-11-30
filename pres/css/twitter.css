@@ -1,0 +1,8 @@
+@font-face { font-family: "edgeicons"; src: url("../fonts/edge-icons-Regular.woff") format("woff"); }
+.twitter {
+}
+.twitter:before {
+    color: rgb(29, 161, 242);
+    font-family: 'edgeicons';
+    content: ' ';
+}
