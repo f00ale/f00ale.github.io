@@ -161,7 +161,9 @@ struct MyTemplate<ImSpecial> { ... };
 --
 # Typlistor
 * [https://godbolt.org/z/5EPM39jMP]
-* 
+* [https://godbolt.org/z/qzzY6qae6]
+* [https://godbolt.org/z/6xj8KKnhE]
+
 ---
 # Nackdelar med templates
 * Kompileringstider
