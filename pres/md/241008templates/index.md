@@ -8,6 +8,9 @@
 ### 2024-10-08
 
 ---
+<!-- .slide: class="center" -->
+# [https://f00ale.github.io/pres/?mdfile=md/241008templates/index.md]
+---
 
 # Introduktion
 * Templates är C++ sätt att gör metaprogrammering
@@ -151,11 +154,20 @@ struct MyTemplate<ImSpecial> { ... };
 * [https://godbolt.org/z/j8bqWv4zG]
 ---
 # Variadiska templates och typlistor
+* Ett template med godtyckligt antal templateparametrar
+* [https://godbolt.org/z/vW41nqnMc]
+* [https://godbolt.org/z/vW3ch4Edc]
 
-
+--
+# Typlistor
+* [https://godbolt.org/z/5EPM39jMP]
+* 
 ---
 # Nackdelar med templates
 * Kompileringstider
   * mycket kod måste läggas i header-filer
 * Kodduplicering i binärer
   * Debug-info kan bli stort
+* Ofta svårläst kod
+* Svårt att felsöka
+
