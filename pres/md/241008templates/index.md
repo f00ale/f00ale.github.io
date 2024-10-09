@@ -8,9 +8,6 @@
 ### 2024-10-08
 
 ---
-<!-- .slide: class="center" -->
-# [https://f00ale.github.io/pres/?mdfile=md/241008templates/index.md]
----
 
 # Introduktion
 * Templates är C++ sätt att gör metaprogrammering
