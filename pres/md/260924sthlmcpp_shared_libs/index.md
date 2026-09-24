@@ -31,6 +31,11 @@
 
 ---
 # Agenda
+
+* Who am I?
+
+## &nbsp;
+
 * What is a shared library
 * How does one use shared libraries
   * Which tools exist
@@ -54,6 +59,8 @@ In Linux they're commonly called libXXX.so.N,
 but can be called anything
 
 so - shared object
+
+NB! I use dynamic library as a direct synonym for shared library.
 
 (And everything called .so isn't necessarily a library)
 
@@ -146,6 +153,8 @@ explain ELF
 
 Versioned libraries are distributed, where SONAME is set to the compatible version
 (ie major)
+
+SONAME can be seen as "chosen name" for a library.
 
 In the development package a unversioned file is present, pointing to the latest version.
 
@@ -271,6 +280,14 @@ When crosscompiling `-rpath-link` can come in useful.
 Commandline says rpath, actually sets runpath.
 
 rpath is legacy and differs in search order priority in regard to LD_LIBRARY_PATH
+
+--
+# set SONAME
+With the same pattern the SONAME of a library can be set:
+
+```text
+$ g++ -o mylib.so.1.0.0 -shared mylib.o -Wl,-soname=mylib.so.1
+```
 
 ---
 # ⚠️ It's just code!
